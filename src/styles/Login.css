@@ -1,0 +1,93 @@
+
+body, html {
+    height: 100%; /* Garante que o body ocupe 100% da altura da tela */
+    margin: 0;
+    padding: 0;
+    
+}
+
+/* src/styles/Login.css */
+
+.login-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* O segredo para a centralização perfeita */
+}
+
+
+.login-box {
+    width: 350px;
+    padding: 40px;
+    background: rgba(0, 0, 0, 0.5);
+    border: 2px solid;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 40px rgba(0, 255, 255, 0.5), 0 0 80px rgba(255, 0, 255, 0.5);
+    animation: neon-border 3s infinite alternate;
+}
+
+/* ... o restante do seu código CSS */
+
+@keyframes neon-border {
+    from {
+        border-image: linear-gradient(45deg, #00ffff, #ff00ff) 1;
+    }
+    to {
+        border-image: linear-gradient(45deg, #ff00ff, #00ffff) 1;
+    }
+}
+
+.title {
+    color: #fff;
+    text-align: center;
+    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    font-size: 2.5em;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 2px solid #00ffff;
+    border-radius: 8px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+    box-shadow: 0 0 10px #00ffff;
+    transition: box-shadow 0.3s ease;
+}
+
+input:focus {
+    box-shadow: 0 0 20px #ff00ff;
+}
+
+.social-login {
+    text-align: center;
+    margin: 20px 0;
+    color: #fff;
+}
+
+.social-icons img {
+    width: 40px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.toggle-button, .submit-button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #fff;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    transition: transform 0.2s ease-in-out;
+}
+
+.toggle-button:hover, .submit-button:hover {
+    transform: scale(1.02);
+}

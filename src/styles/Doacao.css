@@ -1,0 +1,76 @@
+.doacao-page {
+    background: url('../assets/fundo1.png') no-repeat center center/cover;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.hero-section {
+    padding: 100px 50px;
+    text-align: center;
+}
+
+.hero-section h1 {
+    font-size: 3em;
+    text-shadow: 0 0 10px #00ffff;
+}
+
+.hero-section p {
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: -800px ;
+}
+
+.doar-button {
+    padding: 15px 30px;
+    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.doar-button:hover {
+    transform: scale(1.05);
+}
+
+.about-section, .gallery-section, .how-it-works-section {
+    padding: 50px;
+    text-align: center;
+}
+
+.about-section {
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin-top: 50px;
+}
+
+.gallery-section img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;
+    border: 2px solid #ff00ff;
+    box-shadow: 0 0 15px rgba(255, 0, 255, 0.5);
+}
+
+.how-it-works-section .steps {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.how-it-works-section .step {
+    text-align: center;
+    width: 250px;
+}
+
+.how-it-works-section .step img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 10px;
+}
