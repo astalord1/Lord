@@ -1,8 +1,9 @@
 .doacao-page {
-    background: url('../assets/fundo1.png') no-repeat center center/cover;
+    background: url('../assets/space1.jpg') no-repeat center center/cover;
     color: #fff;
     min-height: 100vh;
     padding: 20px;
+    
 }
 
 .hero-section {
@@ -18,7 +19,7 @@
 .hero-section p {
     font-size: 1.2em;
     max-width: 600px;
-    margin: -800px ;
+    margin: -900px ;
 }
 
 .doar-button {

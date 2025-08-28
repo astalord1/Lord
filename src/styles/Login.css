@@ -3,7 +3,17 @@ body, html {
     height: 100%; /* Garante que o body ocupe 100% da altura da tela */
     margin: 0;
     padding: 0;
-    
+    background-image: url('../assets/Zandraart.jpg');
+    background-size: cover; /* Faz a imagem cobrir todo o fundo */
+    background-position: center; /* Centraliza a imagem */
+    background-repeat: no-repeat; /* Evita que a imagem se repita */
+    background-attachment: fixed; /* Opcional: faz a imagem ficar fixa ao rolar */
+    margin: 0; /* Remove margens padrão do body */
+    padding: 0; /* Remove padding padrão do body */
+    height: 100vh; /* Garante que o body ocupe a altura total da viewport */
+    display: flex; /* Para centralizar o conteúdo facilmente, se necessário */
+    justify-content: center; /* Centraliza horizontalmente o conteúdo do body */
+    align-items: center; /* Centraliza verticalmente o conteúdo do body */
 }
 
 /* src/styles/Login.css */
@@ -18,7 +28,7 @@ body, html {
 
 .login-box {
     width: 350px;
-    padding: 40px;
+    padding: 70px;
     background: rgba(0, 0, 0, 0.5);
     border: 2px solid;
     border-radius: 20px;
@@ -46,11 +56,11 @@ body, html {
 }
 
 input {
-    width: 100%;
+    width: 325px;
     padding: 12px;
-    margin: 10px 0;
+    margin: 12px 0;
     border: 2px solid #00ffff;
-    border-radius: 8px;
+    border-radius: 9px;
     background: transparent;
     color: #fff;
     outline: none;
