@@ -19,9 +19,10 @@ const Doacao = () => {
             </header>
             
             <section className="about-section">
-                <h2>Sobre o Projeto</h2>
-                <p>Doação de Eletrônicos: Uma Solução Sustentável para o Lixo Eletrônico
-A cada ano, toneladas de lixo eletrônico, ou e-lixo, são descartadas de forma inadequada, representando uma ameaça crescente ao meio ambiente. Componentes como chumbo, mercúrio e cádmio, presentes em dispositivos como computadores, celulares e televisores, contaminam o solo e a água, impactando a saúde pública e a biodiversidade. No entanto, em meio a essa preocupação, a doação de eletrônicos emerge como uma solução promissora e sustentável, especialmente relevante para o nosso projeto</p>
+                <h1>Sobre o Projeto</h1>
+                <p>O descarte inadequado de lixo eletrônico (e-lixo) libera substâncias tóxicas como chumbo, mercúrio e cádmio, prejudicando o meio ambiente,
+                    a saúde pública e a biodiversidade. Frente a esse desafio, a doação de eletrônicos surge como alternativa 
+                    sustentável: reduz o impacto ambiental e promove inclusão digital ao destinar computadores, celulares e TVs para quem mais precisa.</p>
             </section>
 
             <section className="gallery-section">

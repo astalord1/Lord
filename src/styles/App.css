@@ -21,7 +21,7 @@ code {
     position: fixed;
     top: 20px;
     left: 20px;
-    background: linear-gradient(45deg, #ff00ff, #00ffff);
+    background: linear-gradient(45deg, #ff00ff4b, #00ffff5b);
     color: white;
     border: none;
     font-size: 1.5em;
