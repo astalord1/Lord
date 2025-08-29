@@ -2,9 +2,9 @@ import React, { useState } from 'react';
 import '../styles/Login.css';
 import googleIcon from '../assets/google.png';
 import facebookIcon from '../assets/facebook.png';
-import twitterIcon from '../assets/twitter.png';
-import fullMoonIcon from '../assets/full-moon.png'; // Importe o ícone da lua cheia
-import crescentMoonIcon from '../assets/crescent-moon.png'; // Importe o ícone da lua minguante
+import twitterIcon from '../assets/icon-apple1.png';
+import fullMoonIcon from '../assets/entrar-porta.png'; // Importe o ícone da lua cheia
+import crescentMoonIcon from '../assets/sair-porta.png'; // Importe o ícone da lua minguante
 
 const Login = ({ onLogin }) => {
     const [isLogin, setIsLogin] = useState(true);

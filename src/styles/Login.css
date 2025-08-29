@@ -2,7 +2,7 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
-    background-image: url('../assets/login4.jpg');
+    background-image: url('../assets/login5.jpeg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -27,10 +27,9 @@ body, html {
     width: 360px;
     padding: 90px;
     background: rgba(0, 0, 0, 0.5);
-    border: 2px solid;
     border-radius: 20px;
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(0, 255, 255, 0.5), 0 0 80px rgba(255, 0, 255, 0.5);
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.11), 0 0 0px rgba(255, 0, 255, 0.5);
     animation: neon-border 3s infinite alternate;
     display: flex;
     flex-direction: column;
@@ -48,9 +47,9 @@ body, html {
 }
 
 .title {
-    color: #fff;
+    color: #ffffffb6;
     text-align: center;
-    text-shadow: 0 0 10px #00ffff, 0 0 20px #ff00ff;
+    text-shadow: 0 0 10px #00ffff9a, 0 0 20px #ff00ffa4;
     font-size: 2.5em;
     margin-bottom: 20px;
 }
@@ -59,12 +58,12 @@ input {
     width: 100%;
     padding: 16px;
     margin: 10px 0;
-    border: 2px solid #00ffff;
+    border: 2px solid #2600ff6b;
     border-radius: 9px;
     background: transparent;
     color: #ffffff;
     outline: none;
-    box-shadow: 0 0 10px #07c0d8;
+    box-shadow: 0 0 10px #cc00ff6b;
     transition: box-shadow 0.3s ease;
 }
 
@@ -75,7 +74,7 @@ input:focus {
 .social-login {
     text-align: center;
     margin: 20px 0;
-    color: #fff;
+    color: #ffffff;
     width: 100%;
 }
 
@@ -88,7 +87,7 @@ input:focus {
 .social-icons img {
     width: 40px;
     cursor: pointer;
-    filter: drop-shadow(0 0 5px #fff);
+    filter: drop-shadow(0 0 5px #2600ffee);
 }
 
 .submit-button {
@@ -101,7 +100,7 @@ input:focus {
     font-size: 1em;
     font-weight: bold;
     color: #fff;
-    background: linear-gradient(45deg, #00ffff, #ff00ff);
+    background: linear-gradient(45deg, #172183, #5c166d);
     transition: transform 0.2s ease-in-out;
 }
 
@@ -113,7 +112,7 @@ input:focus {
 .toggle-moon-container {
     position: fixed;
     bottom: 20px;
-    right: 280px;
+    right: 115px;
     width: 240px;
     height: 50px;
     cursor: pointer;
@@ -143,7 +142,7 @@ input:focus {
 .moon-icon {
     width: 50px;
     height: 50px;
-    filter: drop-shadow(0 0 10px #fff);
+    
 }
 
 .toggle-text {
