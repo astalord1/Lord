@@ -3,12 +3,13 @@
     color: #fff;
     min-height: 100vh;
     padding: 20px;
-    
+    margin-top: 650px;
 }
 
 .hero-section {
-    padding: 100px 50px;
+    padding: 10px 50px;
     text-align: center;
+    margin-top: -200px;
 }
 
 .hero-section h1 {
@@ -48,7 +49,7 @@
     background: url('../assets/sobre-fundo2.png') no-repeat center center; /* Alinha a imagem no centro */
     border-radius: 20px;
     padding: 100px;
-    margin-top: 300px;
+    margin-top: 1px;
     /* Adicione ou modifique esta linha para preencher a largura total */
     background-size: cover; /* Faz a imagem cobrir todo o espaço */
     
@@ -57,6 +58,7 @@
     justify-content: center; 
     align-items: flex-start;
     flex-direction: column
+    
 }
 
 .about-section p {
@@ -77,6 +79,7 @@
     margin-right: auto;
     margin-left: 20px;
     margin-bottom: 20px;
+    
 }
 
 .gallery-section img {
@@ -94,7 +97,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin-top: 90px;
-    
+    font-size: 1.9em;
 }
 
 .how-it-works-section .step {

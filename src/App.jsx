@@ -2,32 +2,57 @@ import React, { useState } from 'react';
 import Login from './components/Login';
 import Doacao from './components/Doacao';
 import Sidebar from './components/Sidebar';
-import './styles/App.css'; 
+import ProfilePage from './components/ProfilePage';
+import './styles/App.css';
 
 function App() {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
     const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+    const [currentPage, setCurrentPage] = useState('home');
 
     const handleLogin = () => {
         setIsLoggedIn(true);
+        setCurrentPage('home'); // Redireciona para a página principal após o login
     };
 
     const toggleSidebar = () => {
         setIsSidebarOpen(!isSidebarOpen);
     };
 
+    const handleNavigation = (page) => {
+        setCurrentPage(page);
+        setIsSidebarOpen(false); // Fecha a sidebar após a navegação
+    };
+
+    const renderContent = () => {
+        switch (currentPage) {
+            case 'home':
+                return <Doacao />;
+            case 'profile':
+                return <ProfilePage toggleSidebar={toggleSidebar} />;
+            // Adicione outras páginas aqui conforme necessário
+            default:
+                return <Doacao />;
+        }
+    };
+
     return (
         <div className="App">
-            {isLoggedIn ? (
+            {!isLoggedIn ? (
+                <Login onLogin={handleLogin} />
+            ) : (
                 <>
                     <button className="sidebar-toggle" onClick={toggleSidebar}>
-                        ☰ {/* Ícone de hambúrguer */}
+                        ☰
                     </button>
-                    <Sidebar isSidebarOpen={isSidebarOpen} />
-                    <Doacao />
+                    <Sidebar 
+                        isSidebarOpen={isSidebarOpen} 
+                        onNavigate={handleNavigation} 
+                    />
+                    <main className="main-content">
+                        {renderContent()}
+                    </main>
                 </>
-            ) : (
-                <Login onLogin={handleLogin} />
             )}
         </div>
     );

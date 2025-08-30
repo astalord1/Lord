@@ -14,8 +14,6 @@ const Doacao = () => {
         <div className="doacao-page">
             <header className="hero-section">
                 <h1>Transforme vidas doando seus eletrônicos usados</h1>
-                <p>Seus aparelhos podem ajudar estudantes e famílias de baixa renda a se conectarem ao futuro</p>
-                <button className="doar-button">QUERO DOAR AGORA</button>
             </header>
             
             <section className="about-section">

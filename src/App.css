@@ -6,6 +6,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     background-color: #0d0d2a;
+    color: #e6e6e6; /* Cor do texto para contraste com o fundo */
 }
 
 code {
@@ -15,6 +16,9 @@ code {
 
 .App {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 .sidebar-toggle {
@@ -29,6 +33,18 @@ code {
     cursor: pointer;
     z-index: 101;
     border-radius: 5px;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+    padding-top: 80px; /* Espaço para o botão da sidebar */
+    transition: margin-left 0.3s ease;
+}
+
+/* Ajusta o conteúdo quando a sidebar está aberta */
+.sidebar.open + .main-content {
+    margin-left: 250px;
 }
 
 

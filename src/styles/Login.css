@@ -76,6 +76,7 @@ input:focus {
     margin: 20px 0;
     color: #ffffff;
     width: 100%;
+    font-size: 1.6em;
 }
 
 .social-icons {
@@ -97,7 +98,7 @@ input:focus {
     border-radius: 8px;
     cursor: pointer;
     margin-top: 30px;
-    font-size: 1em;
+    font-size: 1.9em;
     font-weight: bold;
     color: #fff;
     background: linear-gradient(45deg, #172183, #5c166d);
@@ -118,6 +119,7 @@ input:focus {
     align-items: center; /* ALINHA VERTICALMENTE A LUA E O TEXTO */
     justify-content: flex-start;
     border-radius: 60px;
+    font-size: 1.3em;
 }
 
 .moon-wrapper {
