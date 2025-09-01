@@ -15,7 +15,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            margin-top: 115rem; /* ou outro valor em rem/em */
+            margin-top: 130rem; /* ou outro valor em rem/em */
             margin-left: auto; /* centraliza o elemento horizontalmente */
             margin-right: auto;
             max-width: 110%; /* limita a largura máxima em 90% da tela */
@@ -36,10 +36,12 @@
             transition: transform 0.3s ease;
             margin-top: 800px;
             object-fit: cover;
+            
         }
         
         .user-profile-pic:hover {
             transform: scale(1.05);
+            
         }
         
         .profile-header h1 {

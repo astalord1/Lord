@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Doacao.css';
 
+
 // Importe as imagens da galeria e dos ícones
 import galeria1 from '../assets/galeria_1.jpeg';
 import galeria2 from '../assets/galeria_2.png';
@@ -8,6 +9,7 @@ import galeria3 from '../assets/galeria_3.jpeg';
 import iconeDoar from '../assets/icone_doar.png';
 import iconeColetar from '../assets/icone_coletar.png';
 import iconeEntregar from '../assets/icone_entregar.png';
+
 
 const Doacao = () => {
     return (
@@ -17,7 +19,8 @@ const Doacao = () => {
             </header>
             
             <section className="about-section">
-                <h1>Sobre o Projeto</h1>
+                <span className="text-part left"><h1>Sobre</h1></span>
+                <span className="text-part right"><h1>o Projeto</h1></span>
                 <p>O descarte inadequado de lixo eletrônico (e-lixo) libera substâncias tóxicas como chumbo, mercúrio e cádmio, prejudicando o meio ambiente,
                     a saúde pública e a biodiversidade. Frente a esse desafio, a doação de eletrônicos surge como alternativa 
                     sustentável: reduz o impacto ambiental e promove inclusão digital ao destinar computadores, celulares e TVs para quem mais precisa.</p>
@@ -31,7 +34,7 @@ const Doacao = () => {
                     <img src={galeria3} alt="Galeria 3" />
                 </div>
             </section>
-
+            
             <section className="how-it-works-section">
                 <h2>Como Funciona</h2>
                 <div className="steps">

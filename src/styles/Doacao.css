@@ -3,7 +3,7 @@
     color: #fff;
     min-height: 100vh;
     padding: 20px;
-    margin-top: 650px;
+    margin-top: 80rem;
 }
 
 .hero-section {
@@ -52,7 +52,6 @@
     margin-top: 1px;
     /* Adicione ou modifique esta linha para preencher a largura total */
     background-size: cover; /* Faz a imagem cobrir todo o espaço */
-    
     /* Mantenha as propriedades Flexbox para posicionar o texto */
     display: flex;
     justify-content: center; 
@@ -72,6 +71,61 @@
     margin-left: 20px; /* Adiciona um espaço para a esquerda */
     font-size: 1.5em;
 }
+
+
+.split-text-container {
+  display: flex;
+  font-size: 5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #fff;
+  overflow: hidden;
+  font-family: 'Arial', sans-serif;
+    
+}
+
+.text-part {
+    display: inline-block;
+    position: relative;
+    transform: translateX(0);
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    font-size: 2.1em;
+    margin-top: -90px;
+
+}
+
+.text-part.left {
+    transform: translateX(-200%);
+    animation-name: slide-in-left;
+}
+
+.text-part.right {
+    transform: translateX(200%);
+    animation-name: slide-in-right;
+}
+
+@keyframes slide-in-left {
+    0% {
+        transform: translateX(-200%);
+}
+    100% {
+    transform: translateX(0);
+}
+}
+
+@keyframes slide-in-right {
+    0% {
+    transform: translateX(200%);
+}
+    100% {
+    transform: translateX(0);
+}
+}
+
+
+
 
 /* Estilo para o título, para que ele também fique alinhado à esquerda */
 .about-section h1 {
