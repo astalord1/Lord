@@ -2,7 +2,7 @@ import React from 'react';
 import '../styles/ProfilePage.css';
 import userProfileImage from '../assets/user_profile.jpg';
 import TELEFONE from '../assets/TELEFONE.jpeg';
-import NOTEBOOK from '../assets/NOTEBOOK.jpeg';
+import NOTEBOOK from '../assets/NOTEBOOK1.jpg';
 
 const ProfilePage = ({ toggleSidebar }) => {
   return (
@@ -73,7 +73,6 @@ const ProfilePage = ({ toggleSidebar }) => {
             </div>
           </div>
           <div className="reputation-buttons">
-            <button>Editar</button>
             <button>Editar</button>
             <button>Pedidos</button>
             <button>Excluir</button>

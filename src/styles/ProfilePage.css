@@ -5,7 +5,6 @@
             min-height: 100vh;
             color: #fff;
             font-family: 'Inter', sans-serif;
-            
         }
 
 
@@ -16,20 +15,27 @@
             align-items: center;
             text-align: center;
             position: relative;
-            margin-top: 800px;
-            margin-left: 300px;
-            margin-right: 300px;
-        
+            margin-top: 115rem; /* ou outro valor em rem/em */
+            margin-left: auto; /* centraliza o elemento horizontalmente */
+            margin-right: auto;
+            max-width: 110%; /* limita a largura máxima em 90% da tela */
+            background-image: url(../assets/ia.png);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            border-radius: 20px;
+            
         }
         
         .user-profile-pic {
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            border: 5px solid #00ffff;
+            box-shadow: 5px 5px 159px  #00ffffd7;
             cursor: pointer;
             transition: transform 0.3s ease;
             margin-top: 800px;
+            object-fit: cover;
         }
         
         .user-profile-pic:hover {
@@ -46,8 +52,16 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-            gap: 5px;
+            gap: 10px;
             margin-bottom: 15px;
+            
+        }
+        .user-details .user-location{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 90px;
         }
         
         .email-verified, .user-location {
@@ -61,34 +75,33 @@
         }
         
         .action-buttons {
-            display: flex;
-            gap: 15px;
-            margin-top: 15px;
-        }
-        
-        .follow-button, .message-button {
-            padding: 30px 50px;
-            border: none;
-            border-radius: 25px;
-            font-size: 2em;
-            cursor: pointer;
-            transition: background-color 0.3s ease, color 0.3s ease;
-        }
+        position: relative;
+        display: flex;
+        gap: 180px;
+        top: -50px; /* Move o elemento 10px para cima */
+        padding: 30px 80px;
+        border: none;
+        border-radius: 25px;
+        font-size: 2em;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease;
+        margin-top: 0; /* Removed this margin to prevent it from pushing the button down */
+}
         
         .follow-button {
-            background-color: #007bff;
-            color: #fff;
-        }
+        background-color: #007bff;
+        color: #fff;
+        
+}
         
         .message-button {
-            background-color: #343a40;
-            color: #fff;
-        }
-        
+        background-color: #343a40;
+        color: #fff;
+}
         .search-section, .items-section, .reputation-section {
             background-color: rgba(23, 9, 85, 0.137);
             border-radius: 10px;
-            margin-top: 20px;
+            margin-top: 28px;
             backdrop-filter: blur(5px);
             
         }
@@ -99,7 +112,7 @@
         width: 100%;
         padding: 60px;
         box-sizing: border-box; /* Adicione esta linha */
-    
+        
         }
 
         .search-section input {
@@ -111,6 +124,7 @@
         border-radius: 5px;
         font-size: 1.7rem;
         box-sizing: border-box; /* Adicione esta linha também para o input */
+        
 }
         
         .search-section .filter-button {
@@ -122,6 +136,7 @@
             border-radius: 5px;
             margin-left: 10px;
             cursor: pointer;
+            
         }
         
         .items-section h2, .reputation-section h2 {
@@ -135,26 +150,35 @@
             font-size: 0.9em;
             color: #00ffff;
             text-decoration: none;
+            
         }
         
+
+        /* ultima modificaçao aumenta o lado*/
         .items-list {
             display: flex;
-            gap: 200px;
+            gap: 120px;
             overflow-x: auto;
+            margin-left: 150px;
+            margin-right: 150px;
         }
-        
+        /* tamanho do perfil */
         .item-card {
-            background-color: rgba(0, 0, 0, 0.3);
-            border-radius: 10px;
-            padding: 140px;
-            flex-shrink: 0;
-            width: 300px;
-            text-align: center;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 10px;
+        padding: 200px; /* Reduced padding for a better fit */
+        flex-shrink: 0;
+        width: 300px; /* Adjusted width to a fixed size for consistency */
+        display: flex; /* Changed to flexbox */
+        flex-direction: column;
+        align-items: center; /* Centers the content horizontally */
+        text-align: center;
+        
         }
 
         .item-card h3 {
             font-size: 2.5rem; /* Aumenta o tamanho da fonte do título "Itens Disponíveis" */
-            margin-bottom: 40px;
+            margin-bottom: 4px;
         }
 
         .items-section h2{
@@ -165,21 +189,23 @@
             font-size: 1.9rem;
         }
 
-        .item-card img {
-            width: 200px;
-            height: 200px;
-            border-radius: 10px;
-            display: block; /* A imagem precisa se comportar como um bloco para margin: auto funcionar */
-            margin: 0 auto; /* Define margem superior/inferior como 0 e laterais como automáticas */
-            max-width: 100%; /* Garante que a imagem seja responsiva */
-            height: auto; /* Mantém a proporção da imagem */
-        }
         
+        .item-card img {
+        display: block;
+        width: 600px;  /* Defina a largura fixa desejada */
+        height: 800px;  /* Mantenha a altura automática para evitar distorção */
+        margin: 0 auto; /* Para centralizar a imagem dentro do card */
+        border-radius: 10px;
+        margin-left:60px;
+        margin-right:60px;
+        margin-top: -50px;
+}
+
         .reserve-button {
             background-color: #9370db;
             color: #fff;
             border: none;
-            padding: 30px 29px;
+            padding: 30px 30px;
             border-radius: 20px;
             margin-top: 10px;
             cursor: pointer;
@@ -193,7 +219,7 @@
         .rating-row {
             display: flex;
             align-items: center;
-            margin-bottom: 10px;
+            margin-bottom: 18px;
             gap: 10px;
             font-size: 1.9rem;
 
@@ -216,7 +242,7 @@
         }
         
         .star-rating {
-            font-size: 2.2em;
+            font-size: 1.1em;
         }
         
         .reputation-buttons {
@@ -248,7 +274,7 @@
         
         .environmental-impact {
             text-align: center;
-            margin-top: 20px;
+            margin-top: 29px;
             color: #00ffff;
             font-size: 1.9rem;
         }
@@ -256,3 +282,5 @@
         .items-section .view-all {
             font-size: 1.2rem;
         }
+
+        
