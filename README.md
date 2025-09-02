@@ -1,12 +1,48 @@
-# React + Vite
+Projeto: Doação de Eletrônicos para Pessoas de Baixa Renda
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Promovendo *inclusão digital* e *sustentabilidade*, este projeto busca coletar, recuperar e doar dispositivos eletrônicos usados (celulares, tablets e computadores) para pessoas em situação de vulnerabilidade social.
 
-Currently, two official plugins are available:
+ Público-Alvo
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Estudantes de baixa renda  
+- Pessoas com dificuldades financeiras  
+- Comunidades locais de Rio Negro, Pirassununga e Olho d'Água das Cunhas  
 
-## Expanding the ESLint configuration
+Sobre a Plataforma
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+A plataforma digital conecta doadores e *beneficiários*, priorizando:
+
+- Acessibilidade  
+- Simplicidade de uso  
+- Compatibilidade com dispositivos móveis  
+
+Funcionalidades
+
+Funcionais
+- Cadastro de doadores e receptores  
+- Registro e gerenciamento de equipamentos disponíveis  
+- Área de perguntas frequentes  
+- Notificações sobre o andamento das doações  
+- Depoimentos de beneficiários  
+
+Não Funcionais
+- Interface responsiva e intuitiva  
+- Segurança dos dados pessoais  
+- Alta disponibilidade  
+- Escalabilidade para expansão futura  
+
+ Etapas do Projeto
+
+1. Levantamento e validação dos requisitos  
+2. Criação de protótipos e design da plataforma  
+3. Desenvolvimento web  
+4. Testes de usabilidade  
+5. Implantação e acompanhamento contínuo  
+
+ Equipe
+
+- Antonio Raydon Silva Araujo  
+- Geovana da Silva Oliveira  
+- Leticia Bonavita Tonisso  
+
+Este projeto faz parte da iniciativa de incentivo à inclusão digital e sustentabilidade.
