@@ -1,15 +1,16 @@
 .doacao-page {
-    background: url('../assets/login5.jpeg') no-repeat center center/cover;
+    background: url('../assets/teste1.png') no-repeat center center/cover;
     color: #fff;
     min-height: 100vh;
     padding: 20px;
-    margin-top: 80rem;
+    margin-top: 70rem;
+    
 }
 
 .hero-section {
     padding: 10px 50px;
     text-align: center;
-    margin-top: -200px;
+    margin-top: 200px;
 }
 
 .hero-section h1 {
@@ -44,21 +45,34 @@
     
 }
 
+
+@keyframes slideDown {
+    from {
+    transform: translateY(-100%); /* Começa 100% acima do seu tamanho */
+    opacity: 0; /* Começa invisível */
+}
+to {
+    transform: translateY(0); /* Termina na posição original */
+    opacity: 1; /* Termina totalmente visível */
+    }
+}
+
 .about-section {
-    /* Mantenha os estilos existentes */
-    background: url('../assets/sobre-fundo2.png') no-repeat center center; /* Alinha a imagem no centro */
+    /* Mantém os estilos de animação */
+    animation: slideDown 1s ease-out forwards;/* Estilos para a imagem e layout */
+    background: url('../assets/eletronicos.png') no-repeat right center; /* A imagem fica no canto esquerdo */
+    background-size: 50% auto; /* Faz a imagem ocupar 50% da largura, mantendo a proporção */
     border-radius: 20px;
     padding: 100px;
-    margin-top: 1px;
-    /* Adicione ou modifique esta linha para preencher a largura total */
-    background-size: cover; /* Faz a imagem cobrir todo o espaço */
-    /* Mantenha as propriedades Flexbox para posicionar o texto */
+    margin-top: -9px;/* Mantém as propriedades Flexbox para o texto */
     display: flex;
-    justify-content: center; 
-    align-items: flex-start;
-    flex-direction: column
-    
+    justify-content: flex-start; /* Move o conteúdo (texto) para a direita */
+    align-items: flex-start; /* Alinha o conteúdo ao final (direita) */
+    flex-direction: column;/* Adiciona um padding extra para garantir que o texto não sobreponha a imagem */
+    padding-right: 50%; 
+    background-color: #04082baf;
 }
+
 
 .about-section p {
     /* Remova a margem que está causando o problema */
@@ -70,17 +84,19 @@
     margin-right: auto; /* Empurra o parágrafo para a esquerda */
     margin-left: 20px; /* Adiciona um espaço para a esquerda */
     font-size: 1.5em;
+    margin-top: 30px;
+    
 }
 
 
 .split-text-container {
-  display: flex;
-  font-size: 5rem;
-  font-weight: bold;
-  text-transform: uppercase;
-  color: #fff;
-  overflow: hidden;
-  font-family: 'Arial', sans-serif;
+    display: flex;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #ffffff;
+    overflow: hidden;
+    font-family: 'Arial', sans-serif;
     
 }
 
