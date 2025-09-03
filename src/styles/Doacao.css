@@ -3,7 +3,7 @@
     color: #fff;
     min-height: 100vh;
     padding: 20px;
-    margin-top: 70rem;
+    margin-top: 95rem;
     
 }
 
@@ -40,7 +40,7 @@
 }
 
 .about-section, .gallery-section, .how-it-works-section {
-    padding: 90px;
+    padding: 9px;
     text-align: center;
     
 }
@@ -61,31 +61,32 @@ to {
     /* Mantém os estilos de animação */
     animation: slideDown 1s ease-out forwards;/* Estilos para a imagem e layout */
     background: url('../assets/eletronicos.png') no-repeat right center; /* A imagem fica no canto esquerdo */
-    background-size: 50% auto; /* Faz a imagem ocupar 50% da largura, mantendo a proporção */
+    background-size: 65% auto; /* Faz a imagem ocupar 50% da largura, mantendo a proporção */
     border-radius: 20px;
     padding: 100px;
-    margin-top: -9px;/* Mantém as propriedades Flexbox para o texto */
+    margin-top: 300px;/* Mantém as propriedades Flexbox para o texto */
     display: flex;
     justify-content: flex-start; /* Move o conteúdo (texto) para a direita */
     align-items: flex-start; /* Alinha o conteúdo ao final (direita) */
     flex-direction: column;/* Adiciona um padding extra para garantir que o texto não sobreponha a imagem */
     padding-right: 50%; 
     background-color: #04082baf;
+    font-size: 1.1em;
 }
 
 
 .about-section p {
     /* Remova a margem que está causando o problema */
-    margin: 0;
-    /* Limite a largura para que o texto não se espalhe */
-    max-width: 50%;
-    /* Mova o texto para a esquerda com alinhamento de texto e margem */
+    margin: 0;/* Limite a largura para que o texto não se espalhe */
+    max-width: 50%;/* Mova o texto para a esquerda com alinhamento de texto e margem */
     text-align: left;
     margin-right: auto; /* Empurra o parágrafo para a esquerda */
     margin-left: 20px; /* Adiciona um espaço para a esquerda */
-    font-size: 1.5em;
-    margin-top: 30px;
-    
+    font-size: 1.9em;
+}
+
+.about-section {
+    font-size: 1rem;
 }
 
 
@@ -183,4 +184,101 @@ to {
     box-shadow: 0 5px 15px rgba(255, 0, 255, 0.185);
     border-radius: 10px;
     background: linear-gradient(45deg, #1722836c, #5c166d2c);
+}
+
+
+
+
+
+.marketplace {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 3rem;
+    max-width: 97rem;
+    margin: auto;
+    
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 0 15px #00ffff17, 0 0 30px #ff00ff33;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    padding: 40px;
+    
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px #00ffff34, 0 0 50px #ff00ff50;
+}
+
+.card img {
+    width:100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease;
+    border-bottom: 2px solid #ff00ff3b;
+    border-radius: 10px;
+    margin-left:3px;
+    
+
+}
+
+.card:hover img {
+    transform: scale(1.3);
+}
+
+.card-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(15, 15, 15);
+    color: rgba(0, 255, 255, 0.212);
+    padding: 15px;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    text-shadow: 0 0 3px rgba(0, 255, 255, 0.151), 0 0 6px #0ff;
+    
+}
+
+.card:hover .card-info {
+    transform: translateY(0);
+    
+}
+
+.card-info h3 {
+    font-size: 1.5em;
+    margin: 0 0 5px;
+    color: #ff00ff77;
+    text-shadow: 0 0 3px #ff00ff52, 0 0 6px #ff00ff3b;
+    
+}
+
+.buttons {
+    margin-top: 10px;
+    display: flex;
+    gap: 6px;
+}
+
+.buttons button {
+    flex: 1;
+    border: 1px solid rgba(0, 255, 255, 0.164);
+    border-radius: 6px;
+    padding: 6px;
+    background: transparent;
+    color: rgba(0, 255, 255, 0.904);
+    font-size: 14px;
+    cursor: pointer;
+    text-shadow: 0 0 2px rgba(0, 255, 255, 0.521);
+    transition: 0.3s;
+}
+
+.buttons button:hover {
+    background: rgba(0, 255, 255, 0.116);
+    color: #0d0d0dfa;
+    box-shadow: 0 0 8px #0ff, 0 0 12px #0ff;
 }

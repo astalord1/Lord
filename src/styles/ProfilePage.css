@@ -6,7 +6,10 @@
             color: #fff;
             font-family: 'Inter', sans-serif;
         }
-
+        
+        .profile-page-background {
+            background-image: url(../assets/teste1.png);
+        }
 
         .profile-header {
             
@@ -15,7 +18,7 @@
             align-items: center;
             text-align: center;
             position: relative;
-            margin-top: 130rem; /* ou outro valor em rem/em */
+            margin-top: 140rem; /* ou outro valor em rem/em */
             margin-left: auto; /* centraliza o elemento horizontalmente */
             margin-right: auto;
             max-width: 110%; /* limita a largura máxima em 90% da tela */
