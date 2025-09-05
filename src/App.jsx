@@ -3,6 +3,7 @@ import Login from './components/Login';
 import Doacao from './components/Doacao';
 import Sidebar from './components/Sidebar';
 import ProfilePage from './components/ProfilePage';
+
 import './styles/App.css';
 
 function App() {
