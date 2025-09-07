@@ -6,8 +6,11 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url('../assets/teste1.png') no-repeat center center/co; */
+    /* background: url('../assets/fundoz.png') no-repeat center center; */
+    
 }
+
+
 
 .login-container {
     position: relative;
@@ -16,6 +19,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .login-box {
@@ -29,7 +33,7 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    background: linear-gradient(#212121, #2121218e) padding-box,
+    background: linear-gradient(#7a7a7a41, #6e6e6ebb) padding-box,
     linear-gradient(145deg, transparent 35%, #56587a, #0f6486) border-box;
     border: 2px solid transparent;
     cursor: pointer;
@@ -38,6 +42,7 @@ body {
     position: relative;
     overflow: hidden;
     border-radius: 12px;
+    background: url('../assets/fundoz.png') no-repeat center center;
 }
 
 @keyframes neon-border {

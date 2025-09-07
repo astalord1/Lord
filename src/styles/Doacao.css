@@ -3,7 +3,7 @@
     /* background: url('../assets/teste1.png') no-repeat center center/cover; */
     color: #fff;
     padding: 20px;
-    margin-top: 150rem;
+    margin-top: 185rem;
     background: url('../assets/fundoz.png') no-repeat center center/cover;
     color: #fff;
     min-height: 100vh;
@@ -63,10 +63,25 @@ to {
 
 
 .text-box h1 {
-    max-width: 200rem;
+    /* max-width: 200rem;
     font-size: 5rem;
     font-weight: bold;
     color: #8a8888;
+     */
+    color: #e2d7d7;
+    font-size: 5rem;
+    font-family: monospace;
+    font-weight: bold;
+    text-align: center;
+    text-shadow:  
+    1px -1px 0 #2f5d87, 
+    2px -2px 0 #2e5a83, 
+    3px -3px 0 #2d5880, 
+    4px -4px 0 #2b557c, 
+    5px -5px 0 #2a5378, 
+    6px -6px 0 #295074,  
+    7px -7px rgba(0, 0, 0, 0.55), 
+    8px -8px 1px rgba(0, 0, 0, 0.5);
 }
 
 .text-box p {
@@ -113,7 +128,7 @@ p {
     top: -70rem;
     left: 69rem;
     width: 680px;
-    margin-top: -29rem;
+    margin-top: -25rem;
     animation: dropFromTop 1.5s ease forwards, float 3s ease-in-out infinite;
     animation-delay: 6s, 1.5s;
     
@@ -144,7 +159,7 @@ p {
     top: -400px; /* Posição vertical inicial (será ajustada pelo JS se necessário ou pelo layout) */
     left: 70rem; /* Posição horizontal final na tela */
     width: 760px;
-    margin-top: 15rem; /* Margem para ajuste vertical */
+    margin-top: 17rem; /* Margem para ajuste vertical */
   /* Primeira animação: slideInRight */
     animation: 
     slideInRight 7s ease forwards, /* 1.5s para deslizar da direita */
@@ -259,32 +274,6 @@ p {
     border: 2px solid #17228311;
     box-shadow: 0 0 15px rgba(158, 158, 158, 0.048);
 }
-
-.how-it-works-section .steps {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 90px;
-    font-size: 1.9em;
-}
-
-.how-it-works-section .step {
-    text-align: center;
-    width: 250px;
-    
-}
-
-.how-it-works-section .step img {
-    width: 88px;
-    height: 80px;
-    margin-bottom: 30px;
-    box-shadow: 0 5px 15px rgba(255, 0, 255, 0.185);
-    border-radius: 10px;
-    background: linear-gradient(45deg, #1722836c, #5c166d2c);
-}
-
-
-
 
 
 .marketplace {
@@ -443,4 +432,155 @@ p {
 
 .buttons button:active {
     --border-width: 5px;
+}
+
+
+
+/* Estilos para a nova seção Como Funciona */
+
+.how-it-works-section {
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 20rem; 
+}
+
+.how-it-works-section .section-title {
+    font-size: 2.5rem;
+    color: #00bcd4; /* Azul da imagem */
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.steps-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+.step-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Alinhar o conteúdo à esquerda */
+    width: 100%;
+    position: relative;
+}
+
+.image-container {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    /* Estilos para a sombra e fundo conforme a imagem */
+    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 70%);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    
+    /* Animação para a imagem */
+    animation: fadeInImage 1s forwards;
+    opacity: 0;
+}
+
+.step-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.step-content {
+    flex-grow: 1;
+    margin-left: 30px;
+    text-align: left;
+}
+
+.line {
+    width: 100%;
+    height: 2px;
+    background-color: #00bcd4; /* Azul da linha */
+    transform-origin: left;
+    transform: scaleX(0);
+    animation: drawLine 4s forwards;
+    animation-delay: 1s; /* Atraso para a linha aparecer depois da imagem */
+    margin-bottom: 10px;
+}
+
+.text-content {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s forwards;
+    animation-delay: 2s; /* Atraso para o texto aparecer depois da linha */
+}
+
+/* Atrasos individuais para cada passo */
+.step-1 .image-container { animation-delay: 0s; }
+.step-1 .line { animation-delay: 1s; }
+.step-1 .text-content { animation-delay: 2s; }
+
+.step-2 .image-container { animation-delay: 3s; }
+.step-2 .line { animation-delay: 4s; }
+.step-2 .text-content { animation-delay: 5s; }
+
+.step-3 .image-container { animation-delay: 6s; }
+.step-3 .line { animation-delay: 7s; }
+.step-3 .text-content { animation-delay: 8s; }
+
+/* Animações Keyframes */
+@keyframes fadeInImage {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes drawLine {
+    from {
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .step-container {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .step-content {
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .line {
+        margin-bottom: 0; /* Ajuste para espaçamento em telas menores */
+    }
+    .image-container {
+        width: 100px;
+        height: 100px;
+    }
+    .text-content {
+        font-size: 1.2rem;
+    }
 }
