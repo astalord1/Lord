@@ -4,7 +4,7 @@
     color: #fff;
     padding: 20px;
     margin-top: 185rem;
-    background: url('../assets/fundoz.png') no-repeat center center/cover;
+    background: url('../assets/fundo6.png') no-repeat center center/cover;
     color: #fff;
     min-height: 100vh;
     padding: 20px;
@@ -69,19 +69,12 @@ to {
     color: #8a8888;
      */
     color: #e2d7d7;
-    font-size: 5rem;
+    font-size: 5.9rem;
     font-family: monospace;
     font-weight: bold;
     text-align: center;
-    text-shadow:  
-    1px -1px 0 #2f5d87, 
-    2px -2px 0 #2e5a83, 
-    3px -3px 0 #2d5880, 
-    4px -4px 0 #2b557c, 
-    5px -5px 0 #2a5378, 
-    6px -6px 0 #295074,  
-    7px -7px rgba(0, 0, 0, 0.55), 
-    8px -8px 1px rgba(0, 0, 0, 0.5);
+    
+
 }
 
 .text-box p {
@@ -93,7 +86,7 @@ to {
     margin: 0 auto; /* Centraliza o parágrafo na horizontal */
     margin-left: 28px;
     margin-top: 90px;
-    color: #000000c9;
+    color: #00bcd4;
     font-weight: bolder;
 }
 
@@ -271,7 +264,7 @@ p {
     object-fit: cover;
     margin: 30px;
     border-radius: 10px;
-    border: 2px solid #17228311;
+    border: 2px solid #17228321;
     box-shadow: 0 0 15px rgba(158, 158, 158, 0.048);
 }
 
@@ -288,9 +281,9 @@ p {
     width: 320px;
     height: 350px;
     padding: 20px;
-    color: white;
-    background: linear-gradient(#212121, #2121218e) padding-box,
-    linear-gradient(145deg, transparent 35%, #bcbabd, #394549) border-box;
+    color: rgba(255, 255, 255, 0.116);
+    background: linear-gradient(#0a637e65, #03019b4b) padding-box,
+    linear-gradient(145deg, transparent 35%, #058c9e, #394549) border-box;
     border: 2px solid transparent;
     display: flex;
     flex-direction: column;
@@ -477,7 +470,7 @@ p {
     justify-content: center;
     
     /* Estilos para a sombra e fundo conforme a imagem */
-    background: radial-gradient(circle, rgba(255,255,255,0.7) 0%, rgba(255,255,255,0) 70%);
+    background: radial-gradient(circle, rgba(0, 212, 240, 0) 0%, rgba(255,255,255,0) 70%);
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     
     /* Animação para a imagem */
@@ -510,7 +503,7 @@ p {
 .text-content {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #333;
+    color: #00bcd4;
     opacity: 0;
     transform: translateY(20px);
     animation: fadeInUp 1s forwards;

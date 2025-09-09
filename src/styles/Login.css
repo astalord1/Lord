@@ -1,3 +1,9 @@
+/*
+ * Arquivo CSS para o componente de Login.
+ * Este arquivo foi atualizado para posicionar o botão de alternância
+ * na parte inferior do formulário, usando flexbox.
+ */
+
 body {
     height: 100%;
     margin: 0;
@@ -6,10 +12,13 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* background: url('../assets/fundoz.png') no-repeat center center; */
-    
+    /* Novas propriedades para a imagem de fundo */
+    background-image: url(../assets/fundo6.png);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
 }
-
 
 
 .login-container {
@@ -19,30 +28,28 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    
 }
 
 .login-box {
     width: 360px;
-    padding: 90px;
+    padding: 7rem;
     border-radius: 20px;
     backdrop-filter: blur(15px);
-    box-shadow: 0 0 30px rgba(21, 8, 37, 0.842), 0 0 0px rgba(17, 4, 17, 0.5);
+    box-shadow: 0 0 30px rgba(21, 8, 37, 0.301), 0 0 0px rgba(17, 4, 17, 0.11);
     animation: neon-border 3s infinite alternate;
     display: flex;
     flex-direction: column;
     align-items: center;
     position: relative;
-    background: linear-gradient(#7a7a7a41, #6e6e6ebb) padding-box,
-    linear-gradient(145deg, transparent 35%, #56587a, #0f6486) border-box;
+    background: linear-gradient(#7a7a7a07, #6e6e6e1f) padding-box,
+    linear-gradient(145deg, transparent 35%, #56587a, #0f648665) border-box;
     border: 2px solid transparent;
     cursor: pointer;
     transform-origin: right bottom;
     transition: all 0.6s cubic-bezier(0.23, 1, 0.320, 1);
-    position: relative;
     overflow: hidden;
     border-radius: 12px;
-    background: url('../assets/fundoz.png') no-repeat center center;
+    /* background: url('../assets/fundoz.png') no-repeat center center; */
 }
 
 @keyframes neon-border {
@@ -66,7 +73,7 @@ input {
     width: 100%;
     padding: 16px;
     margin: 10px 0;
-    border: 2px solid #2600ff6b;
+    border: 2px solid hsla(189, 100%, 44%, 0.822);
     border-radius: 9px;
     background: transparent;
     color: #ffffff;
@@ -76,7 +83,7 @@ input {
 }
 
 input:focus {
-    box-shadow: 0 0 20px #ff00ff;
+    box-shadow: 0 0 20px #0193b8;
 }
 
 .social-login {
@@ -96,7 +103,7 @@ input:focus {
 .social-icons img {
     width: 40px;
     cursor: pointer;
-    filter: drop-shadow(0 0 5px #2600ffee);
+    filter: drop-shadow(0 0 5px #00aeff83);
 }
 
 .submit-button {
@@ -115,49 +122,24 @@ input:focus {
 
 .submit-button:hover {
     transform: scale(1.02);
-    
 }
 
-.toggle-moon-container {
-    position: fixed;
-    bottom: 20px;
-    cursor: pointer;
-    overflow: hidden;
-    display: flex;
-    align-items: center; /* ALINHA VERTICALMENTE A LUA E O TEXTO */
-    justify-content: flex-start;
-    border-radius: 60px;
-    font-size: 1.3em;
-}
-
-.moon-wrapper {
-    display: flex;
-    align-items: center; /* Garante que o ícone e o texto fiquem na mesma linha */
-    gap: 10px;
-    transition: transform 0.5s ease-in-out;
-}
-
-
-.moon-wrapper.left-side {
-    transform: translateX(0);
-}
-
-.moon-wrapper.right-side {
-    transform: translateX(-150px);
-}
-
-.moon-icon {
-    width: 50px;
-    height: 50px;
-    
+/* Alterações para o botão de alternância */
+.toggle-text-container {
+    /* Empurra o contêiner para a parte inferior */
+    margin-top: auto; 
+    padding-top: 20px; /* Adiciona um espaço para separar do botão de Entrar */
+    text-align: center; /* Centraliza o texto */
 }
 
 .toggle-text {
     font-size: 1.2em;
-    color: #fff;
-    text-shadow: 0 0 5px #48ff0000, 0 0 10px #00ffff00;
+    color: #ffffff;
     font-weight: bold;
-    /* Adicione estas linhas para centralizar o texto */
-    text-align: center; /* Garante que o texto esteja centralizado horizontalmente */
-    flex-grow: -1; /* Permite que o texto ocupe o espaço restante */
+    cursor: pointer;
+    text-shadow: 0 0 3px #00ffff00;
+}
+
+.toggle-text:hover {
+    text-shadow: 0 0 10px #818181, 0 0 20px #79aac7;
 }

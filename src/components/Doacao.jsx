@@ -89,7 +89,6 @@ const Doacao = () => {
                             <p className="text-content">Nos entregamos para o recebedor</p>
                         </div>
                     </div>
-
                 </div>
             </section>
 
