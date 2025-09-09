@@ -10,6 +10,11 @@
             /background-image: url(../assets/teste1.png);
         } */
 
+
+        .profile-page-background{
+            background-color: #000000;
+        }
+
         .profile-header {
             
             display: flex;
@@ -17,23 +22,26 @@
             align-items: center;
             text-align: center;
             position: relative;
-            margin-top: 140rem; /* ou outro valor em rem/em */
+            margin-top: 120rem; /* ou outro valor em rem/em */
             margin-left: auto; /* centraliza o elemento horizontalmente */
             margin-right: auto;
-            max-width: 110%; /* limita a largura máxima em 90% da tela */
-            background-image: url(../assets/ia.png);
+            max-width: 100%; /* limita a largura máxima em 90% da tela */
+            background: url('../assets/fundo-perfil2.png') no-repeat center ;
             background-repeat: no-repeat;
             background-size: cover;
             background-position: center;
             border-radius: 20px;
-            
+        }
+
+        .profile-header h1{
+            color: #007bff;
         }
         
         .user-profile-pic {
             width: 350px;
             height: 350px;
             border-radius: 50%;
-            box-shadow: 5px 5px 159px  #00ffffd7;
+            border: 4mm ridge rgba(0, 227, 243, 0.801);
             cursor: pointer;
             transition: transform 0.3s ease;
             margin-top: 800px;
@@ -70,11 +78,11 @@
         
         .email-verified, .user-location {
             font-size: 3em;
-            color: #b0c4de;
+            color: #000000;
         }
 
         .verified-status {
-            color: #32cd32;
+            color: #008cff;
             font-weight: bold;
         }
         
@@ -94,7 +102,7 @@
         
         .follow-button {
         background-color: #007bff;
-        color: #fff;
+        color: #ffffff;
         
 }
         
@@ -103,7 +111,7 @@
         color: #fff;
 }
         .search-section, .items-section, .reputation-section {
-            background-color: rgba(23, 9, 85, 0.137);
+            background-color: rgba(8, 133, 182, 0.137);
             border-radius: 10px;
             margin-top: 28px;
             backdrop-filter: blur(5px);
@@ -116,15 +124,11 @@
         width: 100%;
         padding: 60px;
         box-sizing: border-box; /* Adicione esta linha */
-        
         }
 
         .search-section input {
         width: 100%; /* Simplifique a largura do input */
         padding: 20px;
-        border: none;
-        background: rgba(255, 255, 255, 0.1);
-        color: #fff;
         border-radius: 5px;
         font-size: 1.7rem;
         box-sizing: border-box; /* Adicione esta linha também para o input */
@@ -136,7 +140,7 @@
             height: 40px;
             background: rgba(255, 255, 255, 0.1);
             border: none;
-            color: #fff;
+            color: #ffffff;
             border-radius: 5px;
             margin-left: 10px;
             cursor: pointer;
@@ -168,7 +172,7 @@
         }
         /* tamanho do perfil */
         .item-card {
-        background-color: rgba(0, 0, 0, 0.3);
+        background-image: url(../assets/fundo7.png);
         border-radius: 10px;
         padding: 200px; /* Reduced padding for a better fit */
         flex-shrink: 0;
@@ -204,7 +208,7 @@
         margin-right:60px;
         margin-top: -50px;
         transition: transform 0.3s ease;
-        border-bottom: 2px solid #ff00ff3b;
+        border-bottom: 2px solid #0044ff3b;
         border-radius: 10px;
         background: linear-gradient(#212121, #212121) padding-box,
         linear-gradient(145deg, transparent 35%, #212121, #00566b) border-box;
@@ -212,8 +216,8 @@
 }
 
         .reserve-button {
-            background-color: #9370db;
-            color: #fff;
+            background-color: #00ffffd8;
+            color: #000000;
             border: none;
             padding: 30px 30px;
             border-radius: 20px;
@@ -236,7 +240,7 @@
         }
         
         .rating-bar {
-            background-color: #555;
+            background-color: #343966;
             height: 8px;
             flex-grow: 1;
             border-radius: 4px;
@@ -244,11 +248,11 @@
         }
         
         .rating-row:first-of-type .rating-bar {
-            background: linear-gradient(to right, #4caf50, #8bc34a);
+            background: linear-gradient(to right, #0481b3, #00087c);
         }
         
         .rating-row:last-of-type .rating-bar {
-            background: linear-gradient(to right, #ffeb3b, #ff9800);
+            background: linear-gradient(to right, #0abaff, #000d7e);
         }
         
         .star-rating {
@@ -278,7 +282,7 @@
         }
         
         .reputation-buttons button:last-child {
-            background-color: #dc3545;
+            background-color: #140088;
             font-size: 1.9rem;
         }
         

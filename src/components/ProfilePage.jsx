@@ -1,8 +1,8 @@
 import React from 'react';
 import '../styles/ProfilePage.css';
 import userProfileImage from '../assets/user_profile.jpg';
-import TELEFONE from '../assets/TELEFONE.jpeg';
-import NOTEBOOK from '../assets/NOTEBOOK1.jpg';
+import TELEFONE from '../assets/celula1.png';
+import NOTEBOOK from '../assets/notebook1.png';
 
 const ProfilePage = ({ toggleSidebar }) => {
   return (
