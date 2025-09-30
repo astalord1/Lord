@@ -31,8 +31,8 @@ body {
 }
 
 .login-box {
-    width: 360px;
-    padding: 7rem;
+    width: 30rem;
+    margin: 600px;
     border-radius: 20px;
     backdrop-filter: blur(15px);
     box-shadow: 0 0 30px rgba(21, 8, 37, 0.301), 0 0 0px rgba(17, 4, 17, 0.11);
@@ -70,7 +70,7 @@ body {
 }
 
 input {
-    width: 100%;
+    width: 80%;
     padding: 16px;
     margin: 10px 0;
     border: 2px solid hsla(189, 100%, 44%, 0.822);
@@ -108,7 +108,7 @@ input:focus {
 
 .submit-button {
     width: 300px;
-    padding: 19px;
+    padding: 18px;
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -128,7 +128,8 @@ input:focus {
 .toggle-text-container {
     /* Empurra o contêiner para a parte inferior */
     margin-top: auto; 
-    padding-top: 20px; /* Adiciona um espaço para separar do botão de Entrar */
+    padding-top: 20px;
+    margin-block-end: 20px; /* Adiciona um espaço para separar do botão de Entrar */
     text-align: center; /* Centraliza o texto */
 }
 

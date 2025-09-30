@@ -44,13 +44,13 @@ const ProfilePage = ({ toggleSidebar }) => {
     <div className="item-card">
       <img src={TELEFONE} alt="Smartphone" />
       <h3>Smartphone</h3>
-      <p>Reservar</p>
+      
       <button className="reserve-button">Reservar</button>
     </div>
     <div className="item-card">
       <img src={NOTEBOOK} alt="Laptop" />
       <h3>Notebook</h3>
-      <p>Reservar</p>
+      
       <button className="reserve-button">Reservar</button>
     </div>
   </div>
