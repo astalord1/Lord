@@ -38,6 +38,34 @@ A plataforma digital está sendo desenvolvida para facilitar a conexão entre **
 3. Desenvolvimento web
 4. Testes de usabilidade
 5. Implantação e acompanhamento contínuo
+   
+## 📖 Resumo – Instruções de Uso e Instalação
+
+A plataforma pode ser acessada em qualquer dispositivo com internet, diretamente pelo navegador. Não é necessário instalar aplicativos.
+
+🔹 Cadastro
+
+O cadastro é único para todos os usuários.
+
+Após criar a conta, você pode escolher se deseja doar ou receber um equipamento.
+
+
+🔹 Como Doar
+
+Acesse sua conta e registre o equipamento (marca, modelo, condição e, se possível, fotos).
+
+Aguarde a plataforma localizar um receptor.
+
+Receba notificações sobre o andamento da doação.
+
+
+🔹 Como Receber
+
+Acesse sua conta e verifique a lista de equipamentos disponíveis.
+
+Solicite o item desejado.
+
+Aguarde a validação e a confirmação da doação.
 
 ## 👥 Equipe
 
