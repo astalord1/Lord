@@ -4,7 +4,7 @@
  * na parte inferior do formulário, usando flexbox.
  */
 
-body {
+/* body {
     height: 100%;
     margin: 0;
     padding: 0;
@@ -12,13 +12,12 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* Novas propriedades para a imagem de fundo */
     background-image: url(../assets/fundo6.png);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     background-repeat: no-repeat;
-}
+} */
 
 
 .login-container {
@@ -28,6 +27,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    background: url('../assets/fundo6.png') no-repeat center center/cover;
 }
 
 .login-box {

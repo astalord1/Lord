@@ -22,7 +22,7 @@ const Sidebar = ({ isSidebarOpen, onNavigate }) => {
                     <li><a href="#" onClick={() => onNavigate('profile')}>perfil</a></li>
                     <li><a href="#" onClick={() => onNavigate('home')}>Minhas Doações</a></li>
                     <li><a href="#" onClick={() => onNavigate('home')}>Histórico</a></li>
-                    <li><a href="#" onClick={() => onNavigate('home')}>Configurações</a></li>
+                    <li><a href="#" onClick={() => onNavigate('about')}>sobre</a></li>
                     <li><a href="#" onClick={() => onNavigate('login')}>Sair</a></li>
                 </ul>
             </nav>

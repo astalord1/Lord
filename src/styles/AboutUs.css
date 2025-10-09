@@ -1,0 +1,197 @@
+/* Variáveis de Cores (Recomendado) */
+:root {
+    --primary-color: #00a2ff; /* Azul para confiança/tecnologia */
+    --secondary-color: #00a2ff; /* Verde para crescimento/ação */
+    --text-dark: #00a2ff;
+    --background-light: #ffffff;
+}
+
+/* ---------------------------------------------------- */
+/* Estrutura Geral */
+/* ---------------------------------------------------- */
+
+.about-us-container {
+    
+    padding: 6rem;
+    font-family: Arial, sans-serif;
+    color: var(--text-dark);
+    width: 90%;
+    height: 90%;
+    margin-top: 28%;
+    background-color: #007BFF;
+    background: url('../assets/fundo6.png') no-repeat center center/cover;
+}
+
+.about-header h1 {
+    font-size: 2.5em;
+    color: var(--primary-color);
+    margin-top: 4rem; 
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #666;
+}
+
+/* ---------------------------------------------------- */
+/* Seção Nossa História (Flexbox) */
+/* ---------------------------------------------------- */
+.history-section {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+    margin-top: 21rem;
+    padding: 40px;
+    /* background-color: var(--background-light); */
+    border-radius: 8px;
+    background: linear-gradient(0deg,rgba(34, 112, 195, 0.473) 0%, rgba(45, 253, 239, 0) 100%);
+
+}
+
+.text-content {
+    flex: 2; /* Texto maior */
+}
+
+.text-content h2 {
+    color: var(--text-dark);
+    font-size: 1.8em;
+    border-left: 4px solid var(--primary-color);
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+.text-content p {
+    color: #cee7ff;
+    font-size: 1.6rem;
+}
+
+.image-content {
+    flex: 1; /* Imagem menor */
+    text-align: right;
+}
+
+.team-photo {
+    width: 100%;
+    max-width: 50rem;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 65px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.image-content img {
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #007bff44;
+    margin-top: 6rem;
+}
+
+/* ---------------------------------------------------- */
+/* Botão CTA */
+/* ---------------------------------------------------- */
+.cta-button {
+    display: inline-block;
+    padding: 12px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.primary {
+    background-color: var(--secondary-color);
+    color: rgb(255, 255, 255);
+}
+
+.primary:hover {
+    background-color: #000f64;
+}
+
+/* ---------------------------------------------------- */
+/* Seção de Impacto (Grid) */
+/* ---------------------------------------------------- */
+.divider {
+    border: 0;
+    height: 1px;
+    background: #00b7ff;
+    margin: 60px 0;
+}
+
+.impact-stories h2 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 80px;
+    font-size: 2rem;
+}
+
+.story-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+    gap: 30px;
+    justify-items: center;
+}
+
+.card2 {
+    background: linear-gradient(0deg,rgba(34, 112, 195, 0.973) 0%, rgba(45, 253, 239, 0.082) 100%);
+    padding: 10%;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 169, 199, 0.05);
+    text-align: center;
+    border-top: 5px solid var(--primary-color);
+
+}
+
+.card2 img {
+     width: 90%; /* Ajuste o tamanho da largura */
+    height: 60%; /* Ajuste o tamanho da altura (manter proporção) */
+    margin-bottom: 10px; /* Espaçamento da imagem para o título */
+    padding: -20px;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 7, 9) 0px 2px 4px, rgba(0, 0, 0, 0.8) 0px 9px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+
+.card2.icon2 {
+    font-size: 3em;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.card2 h3 {
+    /* color: var(--primary-color); */
+    margin-bottom: 15px;
+    font-size: 2em;
+    color: #ffffff;
+}
+
+.card2 p{
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin: 0 0 15px 0; 
+}
+
+/* ---------------------------------------------------- */
+/* Responsividade (Mobile First) */
+/* ---------------------------------------------------- */
+@media (max-width: 768px) {
+    
+    .history-section {
+        flex-direction: column; /* Empilha texto e imagem */
+        align-items: center;
+    }
+
+    .image-content {
+        order: -1; /* Move a imagem para o topo em telas menores */
+        margin-bottom: 20px;
+    }
+
+    .team-photo {
+        max-width: 100%;
+    }
+
+    .story-cards {
+        grid-template-columns: 1fr; /* 1 coluna */
+    }
+}

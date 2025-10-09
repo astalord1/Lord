@@ -3,6 +3,7 @@ import Login from './components/Login';
 import Doacao from './components/Doacao';
 import Sidebar from './components/Sidebar';
 import ProfilePage from './components/ProfilePage';
+import AboutUs from './components/AboutUs'; 
 
 import './styles/App.css';
 
@@ -31,6 +32,9 @@ function App() {
                 return <Doacao />;
             case 'profile':
                 return <ProfilePage toggleSidebar={toggleSidebar} />;
+                // ADIÇÃO NECESSÁRIA: Renderiza o componente AboutUs
+            case 'about':
+                return <AboutUs />;
             // Adicione outras páginas aqui conforme necessário
             default:
                 return <Doacao />;
