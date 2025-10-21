@@ -6,16 +6,16 @@ import '../styles/Doacao.css';
 import imagem1 from '../assets/eletronicos (2).png'; // Substitua pelo caminho correto da imagem
 import imagem2 from '../assets/ia (2).png'; // Substitua pelo caminho correto da imagem
 
-import bicicleta from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem da bicicleta
-import smartphone from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do smartphone
-import console from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do console
-import foneOuvido from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do fone de ouvido
-import notebook from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do notebook
-import relogio from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do relógio
-import roteador from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do roteador
-import monitor from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do monitor
-import caixasSom from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem das caixas de som
-import tecladoMouse from '../assets/eletronicos.png'; // Substitua pelo caminho correto da imagem do teclado e mouse
+import bicicleta from '../assets/bicicleta.jpg'; // Substitua pelo caminho correto da imagem da bicicleta
+import smartphone from '../assets/Smartphone.jpg'; // Substitua pelo caminho correto da imagem do smartphone
+import console from '../assets/console.jpg'; // Substitua pelo caminho correto da imagem do console
+import foneOuvido from '../assets/Fone de ouvido.jpg'; // Substitua pelo caminho correto da imagem do fone de ouvido
+import notebook from '../assets/Notebook usado.jpg'; // Substitua pelo caminho correto da imagem do notebook
+import relogio from '../assets/Relógio digital.jpg'; // Substitua pelo caminho correto da imagem do relógio
+import roteador from '../assets/Roteador.jpg'; // Substitua pelo caminho correto da imagem do roteador
+import monitor from '../assets/Monitor.jpg'; // Substitua pelo caminho correto da imagem do monitor
+import caixasSom from '../assets/Caixas de Som.jpg'; // Substitua pelo caminho correto da imagem das caixas de som
+import tecladoMouse from '../assets/Teclados e Mouses.jpg'; // Substitua pelo caminho correto da imagem do teclado e mouse
 
 import robotHandPhone from '../assets/receber.png'; // Substitua pelo caminho da imagem da mão robô segurando o celular
 import robotHandBox from '../assets/levar.png'; // Substitua pelo caminho da imagem da mão robô segurando a caixa

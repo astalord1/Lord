@@ -4,8 +4,8 @@ import userPic from '../assets/user_profile.jpg';
 
 const Sidebar = ({ isSidebarOpen, onNavigate }) => {
     const user = {
-        name: 'Nome do Usuário',
-        email: 'email@exemplo.com',
+        name: 'RAYDOM',
+        email: 'raydon.silva@example.com',
         profilePicture: userPic,
     };
 

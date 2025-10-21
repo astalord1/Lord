@@ -103,12 +103,14 @@
         .follow-button {
         background-color: #007bff;
         color: #ffffff;
+        box-shadow: 6px 6px #0120205e;
         
 }
         
         .message-button {
         background-color: #343a40;
         color: #fff;
+        box-shadow: 6px 6px #0120205e;
 }
         .search-section, .items-section, .reputation-section {
             background-color: rgba(8, 133, 182, 0.137);
@@ -172,7 +174,9 @@
         }
         /* tamanho do perfil */
         .item-card {
-        background-image: url(../assets/fundo7.png);
+        /* background-image: url(../assets/fundo7.png); */
+        background: linear-gradient(#cfcfcf49, #f2fafd) padding-box,
+    linear-gradient(145deg, transparent 35%, #ffffff2c, #1c292e) border-box;
         border-radius: 10px;
         padding: 200px; /* Reduced padding for a better fit */
         flex-shrink: 0;
@@ -181,12 +185,12 @@
         flex-direction: column;
         align-items: center; /* Centers the content horizontally */
         text-align: center;
-        
         }
 
         .item-card h3 {
             font-size: 2.5rem; /* Aumenta o tamanho da fonte do título "Itens Disponíveis" */
             margin-bottom: 4px;
+            color: #000000;
         }
 
         .items-section h2{
@@ -213,6 +217,7 @@
         background: linear-gradient(#212121, #212121) padding-box,
         linear-gradient(145deg, transparent 35%, #212121, #00566b) border-box;
         border: 6px solid transparent;
+        
 }
 
         .reserve-button {
@@ -224,6 +229,7 @@
             margin-top: 10px;
             cursor: pointer;
             font-size: 30px;
+            box-shadow: 6px 9px #0120207a;
         }
         
         .reputation-details {
@@ -273,7 +279,7 @@
         
         .reputation-buttons button {
             background-color: #343a40;
-            color: #fff;
+            color: #f8f8f8;
             border: none;
             padding: 10px 15px;
             border-radius: 20px;
